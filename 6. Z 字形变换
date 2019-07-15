@@ -26,11 +26,3 @@ class Solution:
         return cc
 a=Solution()
 print(a.convert(s="PINALSIGYAHRPI",numRows = 3))
-
-
-
-
-
-
-
-
