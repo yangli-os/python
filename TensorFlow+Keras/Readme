@@ -3,3 +3,5 @@ conda install tensotflow
 conda install keras
 conda install pandas
 conda install numpy
+pip install matplotlib
+pip install scikit-learn
