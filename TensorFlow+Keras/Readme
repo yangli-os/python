@@ -1,0 +1,5 @@
+运行环境:
+conda install tensotflow
+conda install keras
+conda install pandas
+conda install numpy
