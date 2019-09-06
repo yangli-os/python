@@ -62,7 +62,10 @@ elif len(str(sourse_int)) > 8:
 sourse_float = eval(sourse)-eval(sourse_int)
 if sourse_float != 0:
     two_dot = numbers_list[int(str(sourse_float)[2])] + numbers_list[int(str(sourse_float)[3])]   #two_dot
-    out_zhong +=others_list[1] + two_dot
+    if int(sourse_int) ==0:
+        out_zhong += numbers_list[0] + others_list[1] + two_dot
+    else:
+        out_zhong +=others_list[1] + two_dot
 out_zhong = out_zhong.replace("零万","")         #delet_00000
 #print(out_zhong)
 
