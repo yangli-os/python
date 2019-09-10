@@ -1,0 +1,44 @@
+ "DAJIN-BRC433B75":
+     {"str1": ""
+              "local irda_level_e = {}\n"
+              "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+              "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+
+              "local data_stream_bit1 = (8 * 8)\n"
+              "local data_stream_bit2 = (19 * 8)\n"
+
+              "local startup_code1 = {}\n"
+              "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "startup_code1[\"level0\"]= 3460\n"
+              "startup_code1[\"level0dt\"] = 600\n"
+              "startup_code1[\"level1\"] = 1730\n"
+              "startup_code1[\"level1dt\"] = 400\n\n"
+
+              "local bit_low = {}\n"
+              "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "bit_low[\"level0\"] = 436\n"
+              "bit_low[\"level0dt\"] = 200\n"
+              "bit_low[\"level1\"] = 436\n"
+              "bit_low[\"level1dt\"] = 200\n\n"
+
+              "local bit_high = {}\n"
+              "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "bit_high[\"level0\"] = 436\n"
+              "bit_high[\"level0dt\"] = 200\n"
+              "bit_high[\"level1\"] = 1308\n"
+              "bit_high[\"level1dt\"] = 200\n\n"
+
+              "local end_code1 = {}\n"
+              "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "end_code1[\"level0\"] = 436\n"
+              "end_code1[\"level0dt\"] = 200\n"
+              "end_code1[\"level1\"] = 20000\n"
+              "end_code1[\"level1dt\"] = 80000\n",
+      "str2": "\n"
+              "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+              "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+              "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+              "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+              "len, result = irda_merge_data_frame(len, result, data2, bit_low, bit_high,data_stream_bit2)\n"
+              "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+      },

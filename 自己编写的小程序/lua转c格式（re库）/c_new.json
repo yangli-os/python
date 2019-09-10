@@ -1,0 +1,46 @@
+"DAJIN--003":
+{ "str1": "\ nconst static irda_baisc_bit_t startup_code1 =\ n{\ n    IRDA_LEVEL_H2L, 3500 ,700 ,1700 ,400\ n};\ n" 
+         "\ nconst static irda_bit01_t bit01 =\ n{\ n    {IRDA_LEVEL_H2L,  460 ,200 ,530 ,200,
+},\ n    {IRDA_LEVEL_H2L, 460 ,200 ,1300 ,200\ n};\ n"
+         
+         
+
+         
+         
+
+         
+         
+         
+         
+         
+         
+
+         "\ n#define DATA_STREAM_1_BIT (8 * 8)\ n"
+"\ n#define DATA_STREAM_2_BIT (19 * 8)\ n"
+         
+         
+         
+         
+         
+
+         "\ nconst static irda_baisc_bit_t end_code1 =\ n{\ n    IRDA_LEVEL_H2L, 460, 200, 20000, 80000\ n};\ n"
+         
+         
+         
+         
+         
+
+
+         
+         
+         
+         
+         
+ ,
+"str2":
+"\ n    irda_merge_basic_logic(frame, &startup_code1);"
+"\ n    irda_merge_data_frame(frame, &bit01, &data_stream1);"
+"\ n    irda_merge_basic_logic(frame, &end_code1);"
+"\ n    irda_merge_basic_logic(frame, &startup_code1);"
+"\ n    irda_merge_data_frame(frame, &bit02, &data_stream2);"
+"\ n    irda_merge_basic_logic(frame, &end_code2);"

@@ -1,0 +1,38 @@
+{
+  "协议名称": {
+    "str1": "\nconst static irda_baisc_bit_t startup_code1 =\n{\n    IRDA_LEVEL_H2L, 9000, 900, 4500, 400\n};\n"
+            "\nconst static irda_bit01_t bit01 =\n{\n    {IRDA_LEVEL_H2L, 560, 200, 560, 200},\n    {IRDA_LEVEL_H2L, 560, 200, 1660, 200}\n};\n"
+            "\n#define DATA_STREAM_1_BIT (8 * 8)\n"
+            "\n#define DATA_STREAM_2_BIT (19 * 8)\n"
+            "\nconst static irda_baisc_bit_t end_code1 =\n{\n    IRDA_LEVEL_H2L, 500, 400, 29000, 400\n};\n"
+            "\nconst static irda_baisc_bit_t end_code2 =\n{\n    IRDA_LEVEL_H2L, 500, 100, 20000, 100\n};\n",
+
+    "str2": "\n    irda_merge_basic_logic(frame, &startup_code1);"
+            "\n    irda_merge_data_frame(frame, &bit01, &data_stream1);"
+            "\n    irda_merge_basic_logic(frame, &end_code1);"
+            "\n"
+            "\n    irda_merge_basic_logic(frame, &startup_code1);"
+            "\n    irda_merge_data_frame(frame, &bit01, &data_stream2);"
+            "\n    irda_merge_basic_logic(frame, &end_code2);",
+  },
+  "GLOBAL-006": {
+    "str1": "\nconst static irda_baisc_bit_t startup_code1 =\n{\n    IRDA_LEVEL_H2L, 9000, 1800, 4500, 900\n};\n"
+            "\nconst static irda_bit01_t bit01 =\n{\n    {IRDA_LEVEL_H2L, 550, 200, 550, 200},\n    {IRDA_LEVEL_H2L, 550, 200, 1660, 200}\n};\n"
+            "\n#define DATA_STREAM_1_BIT (4 * 8 + 3)\n"
+            "\nconst static irda_baisc_bit_t end_code1 =\n{\n    IRDA_LEVEL_H2L, 550, 200, 20000, 80000\n};\n",
+
+    "str2": "\n    irda_merge_basic_logic(frame, &startup_code1);"
+            "\n    irda_merge_data_frame(frame, &bit01, &data_stream1);"
+            "\n    irda_merge_basic_logic(frame, &end_code1);",
+  },
+  "FUSHITONG-003": {
+    "str1": "\nconst static irda_baisc_bit_t startup_code1 =\n{\n    IRDA_LEVEL_H2L, 8500, 1700, 4500, 900\n};\n"
+            "\nconst static irda_bit01_t bit01 =\n{\n    {IRDA_LEVEL_H2L, 600, 200, 500, 200},\n    {IRDA_LEVEL_H2L, 500, 200, 1550, 200}\n};\n"
+            "\n#define DATA_STREAM_1_BIT (4 * 8)\n"
+            "\nconst static irda_baisc_bit_t end_code1 =\n{\n    IRDA_LEVEL_H2L, 600, 200, 20000, 80000\n};\n",
+
+    "str2": "\n    irda_merge_basic_logic(frame, &startup_code1);"
+            "\n    irda_merge_data_frame(frame, &bit01, &data_stream1);"
+            "\n    irda_merge_basic_logic(frame, &end_code1);",
+  }
+}

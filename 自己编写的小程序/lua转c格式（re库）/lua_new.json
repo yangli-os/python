@@ -1,0 +1,1867 @@
+		
+		"DAJIN-005":
+                {"str1": ""
+          "local irda_level_e = {}\n"
+          "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+          "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+          "local data_stream_bit1 =(0 * 8+5)\n"
+          "local data_stream_bit2 =(8 * 8)\n"
+          "local data_stream_bit3 =(8 * 8)\n"
+          "local data_stream_bit4 =(23 * 8)\n"
+                      
+                       
+                      
+                  
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 3500\n"
+          "startup_code1[\"level0dt\"] = 600\n"
+          "startup_code1[\"level1\"] = 1700\n"
+          "startup_code1[\"level1dt\"] = 400\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 414\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                  
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 414\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 446\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 414\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1300\n"
+          "bit_high[\"level1dt\"] = 300\n",
+                      
+                  
+                  "str2": "\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit3)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit4)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+              },
+              		
+		"dajin-arc478a8":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(0 * 8+5)\n"
+          "local data_stream_bit2 =(13 * 8)\n"
+          "local data_stream_bit3 =(25 * 8)\n"
+     
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 414\n"
+          "startup_code1[\"level0dt\"] = 200\n"
+          "startup_code1[\"level1\"] = 25360\n"
+          "startup_code1[\"level1dt\"] = 4500\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 3500\n"
+          "end_code1[\"level0dt\"] = 500\n"
+          "end_code1[\"level1\"] = 1750\n"
+          "end_code1[\"level1dt\"] = 300\n"
+          "local end_code2 = {}\n"
+          "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code2[\"level0\"] = 414\n"
+          "end_code2[\"level0dt\"] = 200\n"
+          "end_code2[\"level1\"] = 34780\n"
+          "end_code2[\"level1dt\"] = 4500\n"
+          "local end_code3 = {}\n"
+          "end_code3[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code3[\"level0\"] = 3500\n"
+          "end_code3[\"level0dt\"] = 500\n"
+          "end_code3[\"level1\"] = 1750\n"
+          "end_code3[\"level1dt\"] = 300\n"
+          "local end_code4 = {}\n"
+          "end_code4[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code4[\"level0\"] = 414\n"
+          "end_code4[\"level0dt\"] = 200\n"
+          "end_code4[\"level1\"] = 20000\n"
+          "end_code4[\"level1dt\"] = 4500\n"
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 414\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 446\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 414\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1300\n"
+          "bit_high[\"level1dt\"] = 300\n",
+                                  
+                          
+                          "str2": "\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code3)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit3)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code4)\n"
+                  },
+                  
+                  		
+		"DAJIN-ARC478A8":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(0 * 8+5)\n"
+          "local data_stream_bit2 =(20 * 8)\n"
+          "local data_stream_bit3 =(15 * 8)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 3500\n"
+          "startup_code1[\"level0dt\"] = 700\n"
+          "startup_code1[\"level1\"] = 1750\n"
+          "startup_code1[\"level1dt\"] = 400\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 414\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 414\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 446\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 414\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1300\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit3)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+               
+         
+		"dajin-arc472a49":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(20 * 8)\n"
+          "local data_stream_bit2 =(19 * 8)\n"               
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 10000\n"
+          "startup_code1[\"level0dt\"] = 2000\n"
+          "startup_code1[\"level1\"] = 25360\n"
+          "startup_code1[\"level1dt\"] = 4500\n"
+          "startup_code1[\"level2\"] = 3500\n"
+          "startup_code1[\"level2dt\"] = 500\n"
+          "startup_code1[\"level3\"] = 1750\n"
+          "startup_code1[\"level3dt\"] = 300\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 434\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 35100\n"
+          "end_code1[\"level1dt\"] = 4500\n"
+          "end_code1[\"level2\"] = 3500\n"
+          "end_code1[\"level2dt\"] = 500\n"
+          "end_code1[\"level3\"] = 1750\n"
+          "end_code1[\"level3dt\"] = 300\n"
+          "local end_code2 = {}\n"
+          "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code2[\"level0\"] = 414\n"
+          "end_code2[\"level0dt\"] = 200\n"
+          "end_code2[\"level1\"] = 20000\n"
+          "end_code2[\"level1dt\"] = 4500\n"
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 434\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 434\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 434\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1300\n"
+          "bit_high[\"level1dt\"] = 300\n",
+                                  
+                          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                  },
+                   
+                  		
+		"DONGZHI-005-off":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(13 * 8)\n"
+          "local data_stream_bit2 =(13 * 8)\n"
+                                  
+                                   
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 4400\n"
+          "startup_code1[\"level0dt\"] = 900\n"
+          "startup_code1[\"level1\"] = 4400\n"
+          "startup_code1[\"level1dt\"] = 900\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 530\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 16000\n"
+          "end_code1[\"level1dt\"] = 3200\n"
+          "local end_code2 = {}\n"
+          "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code2[\"level0\"] = 530\n"
+          "end_code2[\"level0dt\"] = 200\n"
+          "end_code2[\"level1\"] = 20000\n"
+          "end_code2[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 530\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 530\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 530\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1630\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                  },
+                  
+
+		
+                  "WANSHIYI":
+                  {"str1": ""
+                           "local irda_level_e = {}\n"
+                           "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                           "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                            "local data_stream_bit1 =(4 * 8)\n"
+            "local data_stream_bit2 =(4 * 8)\n"
+                                    
+                                     
+                                     
+                                    
+                            
+            "local startup_code1 = {}\n"
+            "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "startup_code1[\"level0\"] = 3400\n"
+            "startup_code1[\"level0dt\"] = 700\n"
+            "startup_code1[\"level1\"] = 3400\n"
+            "startup_code1[\"level1dt\"] = 700\n"
+            "local end_code1 = {}\n"
+            "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "end_code1[\"level0\"] = 3400\n"
+            "end_code1[\"level0dt\"] = 700\n"
+            "end_code1[\"level1\"] = 3400\n"
+            "end_code1[\"level1dt\"] = 700\n"
+            "end_code1[\"level2\"] = 860\n"
+            "end_code1[\"level2dt\"] = 700\n"
+            "end_code1[\"level3\"] = 13400\n"
+            "end_code1[\"level3dt\"] = 2600\n"
+            "local end_code2 = {}\n"
+            "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "end_code2[\"level0\"] = 3400\n"
+            "end_code2[\"level0dt\"] = 700\n"
+            "end_code2[\"level1\"] = 3400\n"
+            "end_code2[\"level1dt\"] = 700\n"
+            "end_code2[\"level2\"] = 860\n"
+            "end_code2[\"level2dt\"] = 700\n"
+            "end_code2[\"level3\"] = 20000\n"
+            "end_code2[\"level3dt\"] = 80000\n"
+                            
+            "local bit_low = {}\n"
+            "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_low[\"level0\"] = 860\n"
+            "bit_low[\"level0dt\"] = 300\n"
+            "bit_low[\"level1\"] = 860\n"
+            "bit_low[\"level1dt\"] = 300\n"
+            "local bit_high = {}\n"
+            "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_high[\"level0\"] = 860\n"
+            "bit_high[\"level0dt\"] = 300\n"
+            "bit_high[\"level1\"] = 2560\n"
+            "bit_high[\"level1dt\"] = 300\n",
+                                    
+                            
+            
+                            "str2": "\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                    },
+        		
+		"GLOBAL-008":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(8 * 8)\n"
+          "local data_stream_bit2 =(19 * 8)\n"
+                                  
+                                   
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 3500\n"
+          "startup_code1[\"level0dt\"] = 600\n"
+          "startup_code1[\"level1\"] = 1750\n"
+          "startup_code1[\"level1dt\"] = 600\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 420\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 10000\n"
+          "end_code1[\"level1dt\"] = 2000\n"
+          "local end_code2 = {}\n"
+          "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code2[\"level0\"] = 420\n"
+          "end_code2[\"level0dt\"] = 200\n"
+          "end_code2[\"level1\"] = 20000\n"
+          "end_code2[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 420\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 420\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 420\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1300\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                  },
+		
+                  "DAJIN-003":
+                  {"str1": ""
+                           "local irda_level_e = {}\n"
+                           "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                           "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                            "local data_stream_bit1 =(8 * 8)\n"
+            "local data_stream_bit2 =(19 * 8)\n"
+                                    
+                                     
+                                    
+                            
+            "local startup_code1 = {}\n"
+            "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "startup_code1[\"level0\"] = 3500\n"
+            "startup_code1[\"level0dt\"] = 600\n"
+            "startup_code1[\"level1\"] = 1700\n"
+            "startup_code1[\"level1dt\"] = 400\n"
+            "local end_code1 = {}\n"
+            "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "end_code1[\"level0\"] = 460\n"
+            "end_code1[\"level0dt\"] = 200\n"
+            "end_code1[\"level1\"] = 20000\n"
+            "end_code1[\"level1dt\"] = 80000\n"
+                            
+            "local bit_low = {}\n"
+            "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_low[\"level0\"] = 460\n"
+            "bit_low[\"level0dt\"] = 200\n"
+            "bit_low[\"level1\"] = 530\n"
+            "bit_low[\"level1dt\"] = 200\n"
+            "local bit_high = {}\n"
+            "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_high[\"level0\"] = 460\n"
+            "bit_high[\"level0dt\"] = 200\n"
+            "bit_high[\"level1\"] = 1300\n"
+            "bit_high[\"level1dt\"] = 200\n",
+                                    
+                            
+                            "str2": "\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                    },
+      		
+		"XINKE-002":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(1 * 8)\n"
+          "local data_stream_bit2 =(1 * 8)\n"
+          "local data_stream_bit3 =(1 * 8)\n"
+          "local data_stream_bit4 =(1 * 8)\n"
+          "local data_stream_bit5 =(1 * 8)\n"
+                                  
+                                   
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 1000\n"
+          "startup_code1[\"level0dt\"] = 500\n"
+          "startup_code1[\"level1\"] = 11000\n"
+          "startup_code1[\"level1dt\"] = 2000\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 1000\n"
+          "end_code1[\"level0dt\"] = 500\n"
+          "end_code1[\"level1\"] = 41000\n"
+          "end_code1[\"level1dt\"] = 8000\n"
+          "end_code1[\"level2\"] = 1000\n"
+          "end_code1[\"level2dt\"] = 500\n"
+          "end_code1[\"level3\"] = 11000\n"
+          "end_code1[\"level3dt\"] = 3000\n"
+          "local end_code2 = {}\n"
+          "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code2[\"level0\"] = 1000\n"
+          "end_code2[\"level0dt\"] = 500\n"
+          "end_code2[\"level1\"] = 20000\n"
+          "end_code2[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 1000\n"
+          "bit_low[\"level0dt\"] = 500\n"
+          "bit_low[\"level1\"] = 3000\n"
+          "bit_low[\"level1dt\"] = 500\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 1000\n"
+          "bit_high[\"level0dt\"] = 500\n"
+          "bit_high[\"level1\"] = 7000\n"
+          "bit_high[\"level1dt\"] = 500\n",
+                                  
+                          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit3)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit4)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit5)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                  },
+                     
+		
+                  "DAJIN--001":
+                  {"str1": ""
+                           "local irda_level_e = {}\n"
+                           "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                           "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                            "local data_stream_bit1 =(7 * 8)\n"
+            "local data_stream_bit2 =(15 * 8)\n"
+                                    
+                            
+            "local startup_code1 = {}\n"
+            "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "startup_code1[\"level0\"] = 4900\n"
+            "startup_code1[\"level0dt\"] = 1000\n"
+            "startup_code1[\"level1\"] = 2000\n"
+            "startup_code1[\"level1dt\"] = 400\n"
+            "local end_code1 = {}\n"
+            "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "end_code1[\"level0\"] = 350\n"
+            "end_code1[\"level0dt\"] = 300\n"
+            "end_code1[\"level1\"] = 20000\n"
+            "end_code1[\"level1dt\"] = 80000\n"
+                            
+            "local bit_low = {}\n"
+            "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_low[\"level0\"] = 350\n"
+            "bit_low[\"level0dt\"] = 300\n"
+            "bit_low[\"level1\"] = 700\n"
+            "bit_low[\"level1dt\"] = 300\n"
+            "local bit_high = {}\n"
+            "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_high[\"level0\"] = 350\n"
+            "bit_high[\"level0dt\"] = 300\n"
+            "bit_high[\"level1\"] = 1700\n"
+            "bit_high[\"level1dt\"] = 300\n",
+                                    
+                            
+            
+                            "str2": "\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                    },
+ 		
+                    "DONGZHI-005-normal":
+                    {"str1": ""
+                             "local irda_level_e = {}\n"
+                             "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                             "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                              "local data_stream_bit1 =(9 * 8)\n"
+              "local data_stream_bit2 =(9 * 8)\n"
+                                      
+                                       
+                                       
+                                      
+                              
+              "local startup_code1 = {}\n"
+              "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "startup_code1[\"level0\"] = 4400\n"
+              "startup_code1[\"level0dt\"] = 900\n"
+              "startup_code1[\"level1\"] = 4400\n"
+              "startup_code1[\"level1dt\"] = 900\n"
+              "local end_code1 = {}\n"
+              "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "end_code1[\"level0\"] = 530\n"
+              "end_code1[\"level0dt\"] = 200\n"
+              "end_code1[\"level1\"] = 16000\n"
+              "end_code1[\"level1dt\"] = 3200\n"
+              "local end_code2 = {}\n"
+              "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "end_code2[\"level0\"] = 530\n"
+              "end_code2[\"level0dt\"] = 200\n"
+              "end_code2[\"level1\"] = 20000\n"
+              "end_code2[\"level1dt\"] = 80000\n"
+                              
+              "local bit_low = {}\n"
+              "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "bit_low[\"level0\"] = 530\n"
+              "bit_low[\"level0dt\"] = 200\n"
+              "bit_low[\"level1\"] = 530\n"
+              "bit_low[\"level1dt\"] = 200\n"
+              "local bit_high = {}\n"
+              "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "bit_high[\"level0\"] = 530\n"
+              "bit_high[\"level0dt\"] = 200\n"
+              "bit_high[\"level1\"] = 1630\n"
+              "bit_high[\"level1dt\"] = 200\n",
+                                      
+                              
+              
+                              "str2": "\n"
+              "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+              "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+              "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+              "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+              "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+              "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                      },
+ 		
+                      "GLOBAL823":
+                      {"str1": ""
+                               "local irda_level_e = {}\n"
+                               "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                               "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                                "local data_stream_bit1 =(4 * 8+3)\n"
+                "local data_stream_bit2 =(4 * 8)\n"
+                "local data_stream_bit3 =(4 * 8+3)\n"
+                                        
+                                         
+                                        
+                                        
+                                
+                "local startup_code1 = {}\n"
+                "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                "startup_code1[\"level0\"] = 9000\n"
+                "startup_code1[\"level0dt\"] = 900\n"
+                "startup_code1[\"level1\"] = 4500\n"
+                "startup_code1[\"level1dt\"] = 450\n"
+                "local end_code1 = {}\n"
+                "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                "end_code1[\"level0\"] = 560\n"
+                "end_code1[\"level0dt\"] = 200\n"
+                "end_code1[\"level1\"] = 20000\n"
+                "end_code1[\"level1dt\"] = 2000\n"
+                "local end_code2 = {}\n"
+                "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                "end_code2[\"level0\"] = 560\n"
+                "end_code2[\"level0dt\"] = 200\n"
+                "end_code2[\"level1\"] = 40000\n"
+                "end_code2[\"level1dt\"] = 2000\n"
+                                
+                "local bit_low = {}\n"
+                "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                "bit_low[\"level0\"] = 560\n"
+                "bit_low[\"level0dt\"] = 200\n"
+                "bit_low[\"level1\"] = 560\n"
+                "bit_low[\"level1dt\"] = 200\n"
+                "local bit_high = {}\n"
+                "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                "bit_high[\"level0\"] = 560\n"
+                "bit_high[\"level0dt\"] = 200\n"
+                "bit_high[\"level1\"] = 1680\n"
+                "bit_high[\"level1dt\"] = 200\n",
+                                        
+                                
+                                "str2": "\n"
+                "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+                "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+                "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+                "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+                "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit3)\n"
+                "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit4)\n"
+                        },
+ 		
+                        "DONGZHI-001":
+                        {"str1": ""
+                                 "local irda_level_e = {}\n"
+                                 "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                                 "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                                  "local data_stream_bit1 =(6 * 8)\n"
+                  "local data_stream_bit2 =(6 * 8)\n"
+                                          
+                                           
+                                           
+                                          
+                                  
+                  "local startup_code1 = {}\n"
+                  "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                  "startup_code1[\"level0\"] = 4350\n"
+                  "startup_code1[\"level0dt\"] = 900\n"
+                  "startup_code1[\"level1\"] = 4350\n"
+                  "startup_code1[\"level1dt\"] = 900\n"
+                  "local end_code1 = {}\n"
+                  "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                  "end_code1[\"level0\"] = 582\n"
+                  "end_code1[\"level0dt\"] = 200\n"
+                  "end_code1[\"level1\"] = 5000\n"
+                  "end_code1[\"level1dt\"] = 1000\n"
+                  "local end_code2 = {}\n"
+                  "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                  "end_code2[\"level0\"] = 582\n"
+                  "end_code2[\"level0dt\"] = 200\n"
+                  "end_code2[\"level1\"] = 20000\n"
+                  "end_code2[\"level1dt\"] = 80000\n"
+                                  
+                  "local bit_low = {}\n"
+                  "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                  "bit_low[\"level0\"] = 582\n"
+                  "bit_low[\"level0dt\"] = 200\n"
+                  "bit_low[\"level1\"] = 582\n"
+                  "bit_low[\"level1dt\"] = 200\n"
+                  "local bit_high = {}\n"
+                  "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+                  "bit_high[\"level0\"] = 582\n"
+                  "bit_high[\"level0dt\"] = 200\n"
+                  "bit_high[\"level1\"] = 1580\n"
+                  "bit_high[\"level1dt\"] = 200\n",
+                                          
+                                  
+                                  "str2": "\n"
+                  "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+                  "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+                  "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+                  "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+                  "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                          },                                                               
+
+                          		
+		"ZHIGAO-001-OFF":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(5 * 8+4)\n"
+          "local data_stream_bit2 =(5 * 8+4)\n"
+                
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 2000\n"
+          "startup_code1[\"level0dt\"] = 400\n"
+          "startup_code1[\"level1\"] = 2000\n"
+          "startup_code1[\"level1dt\"] = 400\n"
+          "startup_code1[\"level2\"] = 2000\n"
+          "startup_code1[\"level2dt\"] = 400\n"
+          "startup_code1[\"level3\"] = 2000\n"
+          "startup_code1[\"level3dt\"] = 400\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 500\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 2500\n"
+          "end_code1[\"level1dt\"] = 500\n"
+          "end_code1[\"level2\"] = 500\n"
+          "end_code1[\"level2dt\"] = 200\n"
+          "end_code1[\"level3\"] = 20000\n"
+          "end_code1[\"level3dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 500\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 500\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 500\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1500\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+   		
+		"KELONG-003":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(7 * 8)\n"
+          "local data_stream_bit2 =(7 * 8)\n"
+                                  
+                                   
+                                  
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 3560\n"
+          "startup_code1[\"level0dt\"] = 700\n"
+          "startup_code1[\"level1\"] = 1560\n"
+          "startup_code1[\"level1dt\"] = 300\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 550\n"
+          "end_code1[\"level0dt\"] = 300\n"
+          "end_code1[\"level1\"] = 10000\n"
+          "end_code1[\"level1dt\"] = 2000\n"
+          "local end_code2 = {}\n"
+          "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code2[\"level0\"] = 400\n"
+          "end_code2[\"level0dt\"] = 200\n"
+          "end_code2[\"level1\"] = 20000\n"
+          "end_code2[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 400\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 500\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 400\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1360\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                  },
+           		
+		"SANLING-005":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(5 * 8+3)\n"
+          "local data_stream_bit2 =(5 * 8+3)\n"
+                                  
+                                   
+                                  
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 5000\n"
+          "startup_code1[\"level0dt\"] = 1000\n"
+          "startup_code1[\"level1\"] = 2000\n"
+          "startup_code1[\"level1dt\"] = 400\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 580\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 8500\n"
+          "end_code1[\"level1dt\"] = 1700\n"
+          "local end_code2 = {}\n"
+          "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code2[\"level0\"] = 580\n"
+          "end_code2[\"level0dt\"] = 200\n"
+          "end_code2[\"level1\"] = 20000\n"
+          "end_code2[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 580\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 500\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 580\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1680\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+              		
+		"JINBEIJING":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(7 * 8+5)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 500\n"
+          "startup_code1[\"level0dt\"] = 200\n"
+          "startup_code1[\"level1\"] = 3500\n"
+          "startup_code1[\"level1dt\"] = 700\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 450\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 450\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 550\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 450\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1500\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+ 		
+                  "MAIKEWEIER-004":
+                  {"str1": ""
+                           "local irda_level_e = {}\n"
+                           "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                           "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                            "local data_stream_bit1 =(17 * 8+4)\n"
+                                    
+                                     
+                                    
+                            
+            "local startup_code1 = {}\n"
+            "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "startup_code1[\"level0\"] = 4500\n"
+            "startup_code1[\"level0dt\"] = 900\n"
+            "startup_code1[\"level1\"] = 2500\n"
+            "startup_code1[\"level1dt\"] = 500\n"
+            "local end_code1 = {}\n"
+            "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "end_code1[\"level0\"] = 450\n"
+            "end_code1[\"level0dt\"] = 200\n"
+            "end_code1[\"level1\"] = 20000\n"
+            "end_code1[\"level1dt\"] = 80000\n"
+                            
+            "local bit_low = {}\n"
+            "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_low[\"level0\"] = 450\n"
+            "bit_low[\"level0dt\"] = 200\n"
+            "bit_low[\"level1\"] = 350\n"
+            "bit_low[\"level1dt\"] = 200\n"
+            "local bit_high = {}\n"
+            "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_high[\"level0\"] = 450\n"
+            "bit_high[\"level0dt\"] = 200\n"
+            "bit_high[\"level1\"] = 1000\n"
+            "bit_high[\"level1dt\"] = 200\n",
+                                    
+                            
+            
+                            "str2": "\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                    },
+         		
+		"SANYANG-004":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(19 * 8)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 3300\n"
+          "startup_code1[\"level0dt\"] = 700\n"
+          "startup_code1[\"level1\"] = 1650\n"
+          "startup_code1[\"level1dt\"] = 300\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 410\n"
+          "end_code1[\"level0dt\"] = 300\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 410\n"
+          "bit_low[\"level0dt\"] = 300\n"
+          "bit_low[\"level1\"] = 410\n"
+          "bit_low[\"level1dt\"] = 300\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 410\n"
+          "bit_high[\"level0dt\"] = 300\n"
+          "bit_high[\"level1\"] = 1230\n"
+          "bit_high[\"level1dt\"] = 300\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+ 		
+                  "SANLING-014":
+                  {"str1": ""
+                           "local irda_level_e = {}\n"
+                           "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                           "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                            "local data_stream_bit1 =(18 * 8)\n"
+                                    
+                                     
+                                    
+                            
+            "local startup_code1 = {}\n"
+            "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "startup_code1[\"level0\"] = 3200\n"
+            "startup_code1[\"level0dt\"] = 600\n"
+            "startup_code1[\"level1\"] = 1600\n"
+            "startup_code1[\"level1dt\"] = 400\n"
+            "local end_code1 = {}\n"
+            "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "end_code1[\"level0\"] = 490\n"
+            "end_code1[\"level0dt\"] = 200\n"
+            "end_code1[\"level1\"] = 20000\n"
+            "end_code1[\"level1dt\"] = 80000\n"
+                            
+            "local bit_low = {}\n"
+            "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_low[\"level0\"] = 490\n"
+            "bit_low[\"level0dt\"] = 200\n"
+            "bit_low[\"level1\"] = 370\n"
+            "bit_low[\"level1dt\"] = 300\n"
+            "local bit_high = {}\n"
+            "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_high[\"level0\"] = 490\n"
+            "bit_high[\"level0dt\"] = 200\n"
+            "bit_high[\"level1\"] = 1130\n"
+            "bit_high[\"level1dt\"] = 200\n",
+                                    
+                            
+            
+                            "str2": "\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                    },
+ 		
+                    "FUSHITONG-005-OFF":
+                    {"str1": ""
+                             "local irda_level_e = {}\n"
+                             "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                             "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                              "local data_stream_bit1 =(7 * 8)\n"
+              "local data_stream_bit2 =(7 * 8)\n"
+                                      
+                                      
+                                       
+                                      
+                              
+              "local startup_code1 = {}\n"
+              "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "startup_code1[\"level0\"] = 3260\n"
+              "startup_code1[\"level0dt\"] = 600\n"
+              "startup_code1[\"level1\"] = 1670\n"
+              "startup_code1[\"level1dt\"] = 300\n"
+              "local end_code1 = {}\n"
+              "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "end_code1[\"level0\"] = 453\n"
+              "end_code1[\"level0dt\"] = 200\n"
+              "end_code1[\"level1\"] = 10340\n"
+              "end_code1[\"level1dt\"] = 2000\n"
+              "local end_code2 = {}\n"
+              "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "end_code2[\"level0\"] = 400\n"
+              "end_code2[\"level0dt\"] = 200\n"
+              "end_code2[\"level1\"] = 20000\n"
+              "end_code2[\"level1dt\"] = 80000\n"	
+              "local bit_low = {}\n"
+              "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "bit_low[\"level0\"] = 400\n"
+              "bit_low[\"level0dt\"] = 200\n"
+              "bit_low[\"level1\"] = 400\n"
+              "bit_low[\"level1dt\"] = 200\n"
+              "local bit_high = {}\n"
+              "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "bit_high[\"level0\"] = 400\n"
+              "bit_high[\"level0dt\"] = 200\n"
+              "bit_high[\"level1\"] = 1260\n"
+              "bit_high[\"level1dt\"] = 200\n",
+                                      
+                              
+              
+                              "str2": "\n"
+              "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+              "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+              "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+              "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+              "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                      },
+     		
+		"WEILI-004":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(7 * 8+7)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 6850\n"
+          "startup_code1[\"level0dt\"] = 1300\n"
+          "startup_code1[\"level1\"] = 650\n"
+          "startup_code1[\"level1dt\"] = 300\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 500\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 300\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 650\n"
+          "bit_low[\"level1dt\"] = 300\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 300\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1350\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                      "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+       		
+		"WANSHIYI":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(4 * 8)\n"
+          "local data_stream_bit2 =(4 * 8)\n"
+                                  
+                                   
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 3400\n"
+          "startup_code1[\"level0dt\"] = 700\n"
+          "startup_code1[\"level1\"] = 3400\n"
+          "startup_code1[\"level1dt\"] = 700\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 3400\n"
+          "end_code1[\"level0dt\"] = 700\n"
+          "end_code1[\"level1\"] = 3400\n"
+          "end_code1[\"level1dt\"] = 700\n"
+          "end_code1[\"level2\"] = 860\n"
+          "end_code1[\"level2dt\"] = 700\n"
+          "end_code1[\"level3\"] = 13400\n"
+          "end_code1[\"level3dt\"] = 2600\n"
+          "local end_code2 = {}\n"
+          "end_code2[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code2[\"level0\"] = 3400\n"
+          "end_code2[\"level0dt\"] = 700\n"
+          "end_code2[\"level1\"] = 3400\n"
+          "end_code2[\"level1dt\"] = 700\n"
+          "end_code2[\"level2\"] = 860\n"
+          "end_code2[\"level2dt\"] = 700\n"
+          "end_code2[\"level3\"] = 20000\n"
+          "end_code2[\"level3dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 860\n"
+          "bit_low[\"level0dt\"] = 300\n"
+          "bit_low[\"level1\"] = 860\n"
+          "bit_low[\"level1dt\"] = 300\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 860\n"
+          "bit_high[\"level0dt\"] = 300\n"
+          "bit_high[\"level1\"] = 2560\n"
+          "bit_high[\"level1dt\"] = 300\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code2)\n"
+                  },
+                                                                                                                                                		
+		"MEILING-1":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(16 * 8)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 5000\n"
+          "startup_code1[\"level0dt\"] = 500\n"
+          "startup_code1[\"level1\"] = 2400\n"
+          "startup_code1[\"level1dt\"] = 500\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 450\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 450\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 450\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 450\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 950\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+ 		
+                  "MINGXING-BOYIN":
+                  {"str1": ""
+                           "local irda_level_e = {}\n"
+                           "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                           "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                            "local data_stream_bit1 =(5 * 8)\n"
+            "local data_stream_bit2 =(5 * 8)\n"
+                                    
+                                     
+                                    
+                            
+            "local startup_code1 = {}\n"
+            "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "startup_code1[\"level0\"] = 2000\n"
+            "startup_code1[\"level0dt\"] = 400\n"
+            "startup_code1[\"level1\"] = 2000\n"
+            "startup_code1[\"level1dt\"] = 400\n"
+            "local end_code1 = {}\n"
+            "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "end_code1[\"level0\"] = 320\n"
+            "end_code1[\"level0dt\"] = 300\n"
+            "end_code1[\"level1\"] = 2000\n"
+            "end_code1[\"level1dt\"] = 400\n"
+                            
+            "local bit_low = {}\n"
+            "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_low[\"level0\"] = 320\n"
+            "bit_low[\"level0dt\"] = 300\n"
+            "bit_low[\"level1\"] = 1000\n"
+            "bit_low[\"level1dt\"] = 300\n"
+            "local bit_high = {}\n"
+            "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_high[\"level0\"] = 320\n"
+            "bit_high[\"level0dt\"] = 300\n"
+            "bit_high[\"level1\"] = 2000\n"
+            "bit_high[\"level1dt\"] = 300\n",
+                                    
+                            
+            
+                            "str2": "\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                    },
+            		
+		"YORK-005":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(9 * 8)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 9130\n"
+          "startup_code1[\"level0dt\"] = 1800\n"
+          "startup_code1[\"level1\"] = 2600\n"
+          "startup_code1[\"level1dt\"] = 500\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 600\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 600\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 730\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 600\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1923\n"
+          "bit_high[\"level1dt\"] = 250\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+     		
+		"SONGLINXIA":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(6 * 8+4)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 3000\n"
+          "startup_code1[\"level0dt\"] = 600\n"
+          "startup_code1[\"level1\"] = 1000\n"
+          "startup_code1[\"level1dt\"] = 200\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 3000\n"
+          "end_code1[\"level0dt\"] = 600\n"
+          "end_code1[\"level1\"] = 1000\n"
+          "end_code1[\"level1dt\"] = 200\n"
+          "end_code1[\"level2\"] = 500\n"
+          "end_code1[\"level2dt\"] = 200\n"
+          "end_code1[\"level3\"] = 20000\n"
+          "end_code1[\"level3dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 500\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 500\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 500\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1500\n"
+          "bit_high[\"level1dt\"] = 300\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+    		
+		"XINGE-OFF2":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(6 * 8)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 3300\n"
+          "startup_code1[\"level0dt\"] = 600\n"
+          "startup_code1[\"level1\"] = 1500\n"
+          "startup_code1[\"level1dt\"] = 400\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 500\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 500\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 350\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 500\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1100\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+ 		
+                  "SANLING-008":
+                  {"str1": ""
+                           "local irda_level_e = {}\n"
+                           "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                           "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                            "local data_stream_bit1 =(6 * 8)\n"
+                                    
+                                     
+                                    
+                            
+            "local startup_code1 = {}\n"
+            "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "startup_code1[\"level0\"] = 3500\n"
+            "startup_code1[\"level0dt\"] = 700\n"
+            "startup_code1[\"level1\"] = 3500\n"
+            "startup_code1[\"level1dt\"] = 700\n"
+            "local end_code1 = {}\n"
+            "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "end_code1[\"level0\"] = 500\n"
+            "end_code1[\"level0dt\"] = 300\n"
+            "end_code1[\"level1\"] = 7400\n"
+            "end_code1[\"level1dt\"] = 1500\n"
+            "end_code1[\"level2\"] = 500\n"
+            "end_code1[\"level2dt\"] = 300\n"
+            "end_code1[\"level3\"] = 20000\n"
+            "end_code1[\"level3dt\"] = 80000\n"
+                            
+            "local bit_low = {}\n"
+            "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_low[\"level0\"] = 480\n"
+            "bit_low[\"level0dt\"] = 300\n"
+            "bit_low[\"level1\"] = 1400\n"
+            "bit_low[\"level1dt\"] = 300\n"
+            "local bit_high = {}\n"
+            "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_high[\"level0\"] = 480\n"
+            "bit_high[\"level0dt\"] = 300\n"
+            "bit_high[\"level1\"] = 3400\n"
+            "bit_high[\"level1dt\"] = 300\n",
+                                    
+                            
+            
+                            "str2": "\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                    },
+                    
+       		
+		"SANLINGDIANJI-002":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(1 * 8+7)\n"
+          "local data_stream_bit2 =(1 * 8+7)\n"
+                                  
+                                  
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 570\n"
+          "startup_code1[\"level0dt\"] = 200\n"
+          "startup_code1[\"level1\"] = 5900\n"
+          "startup_code1[\"level1dt\"] = 1200\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 570\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 570\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 480\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 570\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1550\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit2)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+    		
+		"SANLING-015":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(5 * 8+7)\n"
+                                  
+                                  
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 4850\n"
+          "startup_code1[\"level0dt\"] = 1000\n"
+          "startup_code1[\"level1\"] = 1860\n"
+          "startup_code1[\"level1dt\"] = 400\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 250\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 250\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 673\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 250\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1610\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n" 
+                  },
+                                                                                                                  		
+		"LANBO-002":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(5 * 8)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 9000\n"
+          "startup_code1[\"level0dt\"] = 1800\n"
+          "startup_code1[\"level1\"] = 4500\n"
+          "startup_code1[\"level1dt\"] = 900\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 530\n"
+          "end_code1[\"level0dt\"] = 300\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 530\n"
+          "bit_low[\"level0dt\"] = 300\n"
+          "bit_low[\"level1\"] = 850\n"
+          "bit_low[\"level1dt\"] = 300\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 530\n"
+          "bit_high[\"level0dt\"] = 300\n"
+          "bit_high[\"level1\"] = 1880\n"
+          "bit_high[\"level1dt\"] = 300\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+ 		
+                  "LANBO-006":
+                  {"str1": ""
+                           "local irda_level_e = {}\n"
+                           "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                           "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                            "local data_stream_bit1 =(5 * 8)\n"
+                                    
+                                     
+                                    
+                            
+            "local startup_code1 = {}\n"
+            "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "startup_code1[\"level0\"] = 8000\n"
+            "startup_code1[\"level0dt\"] = 1600\n"
+            "startup_code1[\"level1\"] = 4600\n"
+            "startup_code1[\"level1dt\"] = 900\n"
+            "local end_code1 = {}\n"
+            "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "end_code1[\"level0\"] = 780\n"
+            "end_code1[\"level0dt\"] = 200\n"
+            "end_code1[\"level1\"] = 20000\n"
+            "end_code1[\"level1dt\"] = 80000\n"
+                            
+            "local bit_low = {}\n"
+            "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_low[\"level0\"] = 780\n"
+            "bit_low[\"level0dt\"] = 200\n"
+            "bit_low[\"level1\"] = 850\n"
+            "bit_low[\"level1dt\"] = 200\n"
+            "local bit_high = {}\n"
+            "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+            "bit_high[\"level0\"] = 780\n"
+            "bit_high[\"level0dt\"] = 200\n"
+            "bit_high[\"level1\"] = 1750\n"
+            "bit_high[\"level1dt\"] = 200\n",
+                                    
+                            
+            
+                            "str2": "\n"
+            "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+            "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+            "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                    },
+ 		
+                    "LEHUA":
+                    {"str1": ""
+                             "local irda_level_e = {}\n"
+                             "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                             "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                              "local data_stream_bit1 =(5 * 8)\n"
+                                      
+                                       
+                                      
+                              
+              "local startup_code1 = {}\n"
+              "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "startup_code1[\"level0\"] = 3500\n"
+              "startup_code1[\"level0dt\"] = 700\n"
+              "startup_code1[\"level1\"] = 3700\n"
+              "startup_code1[\"level1dt\"] = 700\n"
+              "local end_code1 = {}\n"
+              "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "end_code1[\"level0\"] = 840\n"
+              "end_code1[\"level0dt\"] = 300\n"
+              "end_code1[\"level1\"] = 13700\n"
+              "end_code1[\"level1dt\"] = 2700\n"
+              "end_code1[\"level2\"] = 840\n"
+              "end_code1[\"level2dt\"] = 300\n"
+              "end_code1[\"level3\"] = 20000\n"
+              "end_code1[\"level3dt\"] = 80000\n"
+                              
+              "local bit_low = {}\n"
+              "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "bit_low[\"level0\"] = 840\n"
+              "bit_low[\"level0dt\"] = 300\n"
+              "bit_low[\"level1\"] = 840\n"
+              "bit_low[\"level1dt\"] = 300\n"
+              "local bit_high = {}\n"
+              "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+              "bit_high[\"level0\"] = 840\n"
+              "bit_high[\"level0dt\"] = 300\n"
+              "bit_high[\"level1\"] = 2560\n"
+              "bit_high[\"level1dt\"] = 300\n",
+                                      
+                              
+              
+                              "str2": "\n"
+              "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+              "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+              "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                      },
+     		
+		"XINGE-OFF1":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(7 * 8)\n"
+                                  
+                                  
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 3300\n"
+          "startup_code1[\"level0dt\"] = 700\n"
+          "startup_code1[\"level1\"] = 1500\n"
+          "startup_code1[\"level1dt\"] = 300\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 500\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 500\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 350\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 500\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1100\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+        		
+		"WEILI-001":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(3 * 8)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 9000\n"
+          "startup_code1[\"level0dt\"] = 1800\n"
+          "startup_code1[\"level1\"] = 4500\n"
+          "startup_code1[\"level1dt\"] = 900\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 600\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 700\n"
+          "bit_low[\"level0dt\"] = 200\n"
+          "bit_low[\"level1\"] = 700\n"
+          "bit_low[\"level1dt\"] = 200\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 700\n"
+          "bit_high[\"level0dt\"] = 200\n"
+          "bit_high[\"level1\"] = 1600\n"
+          "bit_high[\"level1dt\"] = 200\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+                  
+                		
+		"SONGGE-1":
+                {"str1": ""
+                         "local irda_level_e = {}\n"
+                         "irda_level_e[\"IRDA_LEVEL_H2L\"] = 0\n"
+                         "irda_level_e[\"IRDA_LEVEL_L2H\"] = 1\n"
+                          "local data_stream_bit1 =(4 * 8)\n"
+                                  
+                                   
+                                  
+                          
+          "local startup_code1 = {}\n"
+          "startup_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "startup_code1[\"level0\"] = 4000\n"
+          "startup_code1[\"level0dt\"] = 800\n"
+          "startup_code1[\"level1\"] = 2000\n"
+          "startup_code1[\"level1dt\"] = 400\n"
+          "local end_code1 = {}\n"
+          "end_code1[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "end_code1[\"level0\"] = 1150\n"
+          "end_code1[\"level0dt\"] = 200\n"
+          "end_code1[\"level1\"] = 20000\n"
+          "end_code1[\"level1dt\"] = 80000\n"
+                          
+          "local bit_low = {}\n"
+          "bit_low[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_low[\"level0\"] = 1150\n"
+          "bit_low[\"level0dt\"] = 300\n"
+          "bit_low[\"level1\"] = 1050\n"
+          "bit_low[\"level1dt\"] = 300\n"
+          "local bit_high = {}\n"
+          "bit_high[\"type\"] = irda_level_e[\"IRDA_LEVEL_H2L\"]\n"
+          "bit_high[\"level0\"] = 1150\n"
+          "bit_high[\"level0dt\"] = 300\n"
+          "bit_high[\"level1\"] = 3250\n"
+          "bit_high[\"level1dt\"] = 300\n",
+                                  
+                          
+          
+                          "str2": "\n"
+          "len, result = irda_merge_basic_logic(len, result, startup_code1)\n"
+          "len, result = irda_merge_data_frame(len, result, data1, bit_low, bit_high,data_stream_bit1)\n"
+          "len, result = irda_merge_basic_logic(len, result, end_code1)\n"
+                  },
+                  
