@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: 蔚蓝的天空Tom
-Aim:给定样本集和特征列表，计算每个特征的基尼指数，选取最优特征，选取最优分切点
-Aim:生成CART决策树的字典形式
-Aim:根据决策树字典绘制CART决策树图形
-cart_dtree.py
+@author: liyang
 """
 
 import matplotlib.pyplot as plt
