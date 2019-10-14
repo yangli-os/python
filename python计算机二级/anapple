@@ -1,0 +1,9 @@
+S='AN APPLE A DAY' #DEF SPLIT(S): # return S.SPLIT('') PRINT(S.SPLIT('A')) I-1] 
+    B.APPEND(M)  
+for J in RANGE(L): 
+    MARK=TRUE 
+    if A[J]!=B[J]:
+        PRINT ("NO") 
+        MARK=FALSE 
+        break
+if MARK==TRUE: PRINT ("YES") 
