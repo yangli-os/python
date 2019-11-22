@@ -1,5 +1,5 @@
 使用环境：
-1.baidu_aip)voice.py
+1.baidu_aip/voice.py
 pip install baidu-aip。
 2.synthesis_win.py
 在Windows环境下运行，需要ffmpeg。
