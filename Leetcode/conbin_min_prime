@@ -1,0 +1,14 @@
+#input一个数字，输出最小的相乘的组和
+s = int(input())
+def s_z(s):
+    str_s = ""
+    for i in range(2,s+1):
+        while(1):
+            if s % i == 0:
+                s = s // i
+                str_s += str(i)
+                str_s += " "
+            else:
+                break
+    return str_s
+print(s_z(s))
