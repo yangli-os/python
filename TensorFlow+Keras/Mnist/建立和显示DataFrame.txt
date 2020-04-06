@@ -1,0 +1,6 @@
+#建立真实值与预测值的DataFrame
+df=pd.DataFrame({'label':y_test_label,'predict':prediction})
+df[:2]
+df[(df.label==5)&(df.predict==3)]    #显示真实值为5，预测值为3的情况
+
+plot_images_labels_prediction(x_test_image,y_test_label,prediction,idx=0,num=1)#显示从0开始的1个   
