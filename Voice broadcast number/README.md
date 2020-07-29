@@ -1,0 +1,9 @@
+使用环境：
+# baidu_aip_voice.py
+pip install baidu-aip。
+# synthesis_win.py
+在Windows环境下运行，需要ffmpeg。
+pip install ffmpeg
+语音使用baidu-aip生成，无法使用ffmpeg进行合成，基础音频采用迅捷文字转语音生成。
+# syn_syn.en.py
+是英语生成的最终版本，需要将中文命名好的音频文件和rename_en.py放到同一文件夹下进行运行，生成英文名的基础音频文件，以供服务器等设备调用。
