@@ -18,3 +18,18 @@
 
 # transpose_excel.m
 将excel表的数据转置后并保存
+
+# add_columns.m
+添加表头并且保存成excel
+
+# 13-1_divide_event.m
+用水事件划分
+
+# 13-2_threshold_optimization
+通过阈值划分用水事件
+
+# divide_event_for_optimization
+根据采集的EXCEL表数据，划分用水事件
+
+# 13-4_test_neural_network.m
+BP神经网络测试模型
