@@ -1,11 +1,11 @@
-%% MySQLÊı¾İ¿âµ¼ÈëÊı¾İÊ¾Àı´úÂë
+%% ä»excelå¯¼å…¥æ•°æ®å¹¶è®­ç»ƒç¥ç»ç½‘ç»œ
 
-% ³õÊ¼»¯²ÎÊı
+% åˆå§‹åŒ–å‚æ•°
 clear;
-%% Á¬½ÓÊı¾İ¿â²¢²éÑ¯
-inputfile = '/data_mange.xls';   % ÑµÁ·Êı¾İ
+%% è¿æ¥æ•°æ®åº“å¹¶æŸ¥è¯¢
+inputfile = '/data_mange.xls';   % è®­ç»ƒæ•°æ®
 data=xlsread(inputfile)
-inputdata = data(:,2:12)' % ¶ÁÈëÑµÁ·Êı¾İ
+inputdata = data(:,2:12)' % è¯»å…¥è®­ç»ƒæ•°æ®
 outputdata=data(:,13:16)'
 
 net = newff(inputdata,outputdata,4);
@@ -13,6 +13,6 @@ net.trainParam.epochs=100;
 net.trainParam.show=10;
 net.trainParam.goal=1e-5;
 % net.trainParam.lr=0.05;
-disp('ÑµÁ·BPÉñ¾­ÍøÂçÖĞ...')
-net=train(net,inputdata,outputdata);      % ×¢ÒâtrÓĞËùĞèµÄÑµÁ·ĞÅÏ¢£¬´Ë´¦ÎªÒ»¸öÊä³ö
+disp('è®­ç»ƒBPç¥ç»ç½‘ç»œä¸­...')
+net=train(net,inputdata,outputdata);      % æ³¨æ„træœ‰æ‰€éœ€çš„è®­ç»ƒä¿¡æ¯ï¼Œæ­¤å¤„ä¸ºä¸€ä¸ªè¾“å‡º
 
