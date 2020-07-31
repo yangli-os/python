@@ -7,6 +7,9 @@
 # Minist_tensorflow2.X.ipynb
 使用tensorflow2.0进行Minist数据集的CNN和神经网络的模型，并保存模型，同步到微博和微信公众号
 
+# environment.txt
+该项目中使用的大部分库的版本
+
 # Last
 update some about Tensorflow2.0 and last version
 CNN,RNN,LSTM,NLP
