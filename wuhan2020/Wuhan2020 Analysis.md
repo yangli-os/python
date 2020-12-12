@@ -16,7 +16,7 @@ In this way, Wuhan2020 has become one of the few self-organized representatives 
 
 截至2020年5月20日，Wuhan2020开源社区通过统计参与者的邮箱确定的参与人数为4095人。随后，通过志愿者邮箱发放志愿者证书，共有1942人领取了Wuhan2020志愿者证书。
 
-![社区全部邮箱种类，总数4095](<img src=https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png width="100%")
+![社区全部邮箱种类，总数4095](https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png)
 ![已领取志愿者证书的邮箱种类，总数1942](https://github.com/16647615268/python/blob/master/wuhan2020/email_sign.png)
 
 可以通过邮箱种类，结合其他数据，粗略估计社区成员的职业以及年龄比例。比如：教育邮箱是参与Wuhan2020的老师所使用的，QQ邮箱使用者多为95后。
