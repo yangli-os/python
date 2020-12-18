@@ -32,7 +32,6 @@ As of May 20, 2020, the number of participants determined by the Wuhan2020 open 
     src="https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png">
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
     color: #999;
     padding: 2px;">All mailbox types in the community, total 4095</div>
 </center>z
