@@ -17,18 +17,27 @@ The output of Wuhan2020 covers the collection, aggregation, and dissemination of
 Statement: All member information data used in the member analysis is not disclosed to the public, and there is no need to worry about personal information disclosure.
 
 As of May 20, 2020, the number of participants determined by the Wuhan2020 open source community through the statistics of participants' email addresses is 4,095. Subsequently, volunteer certificates were issued through the email of volunteers, and a total of 1,942 people received Wuhan2020 volunteer certificates.
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png"
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">All mailbox types in the community, total 4095</div>
+</center>
 
 <center>
-<img src="https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png" width="75%" height="75%">
-All mailbox types in the community, total 4095
-<center>
-  
-<center>
-<img src="https://github.com/16647615268/python/blob/master/wuhan2020/email_sign.png" width="75%" height="75%">
-  
-Types of mailboxes that have received volunteer certificates, total 1942
-
-<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://github.com/16647615268/python/blob/master/wuhan2020/email_sign.png"
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Types of mailboxes that have received volunteer certificates, total 1942</div>
+</center>
 
 We can roughly estimate the occupation and age ratio of community members through mailbox types and other data. For example, the education mailbox is used by the teachers who participated in Wuhan2020, and the QQ mailbox users are mostly young people born after 1995.
 
