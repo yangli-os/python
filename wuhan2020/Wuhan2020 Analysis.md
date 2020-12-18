@@ -17,7 +17,7 @@ The output of Wuhan2020 covers the collection, aggregation, and dissemination of
 Statement: All member information data used in the member analysis is not disclosed to the public, and there is no need to worry about personal information disclosure.
 
 As of May 20, 2020, the number of participants determined by the Wuhan2020 open source community through the statistics of participants' email addresses is 4,095. Subsequently, volunteer certificates were issued through the email of volunteers, and a total of 1,942 people received Wuhan2020 volunteer certificates.
-<center>
+'<center>
     < img 
     src="https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png"
     width = "400" height = "300">
@@ -25,7 +25,7 @@ As of May 20, 2020, the number of participants determined by the Wuhan2020 open 
     <div style="color: #999;
     font-size:11px;
     padding: 2px;">All mailbox types in the community, total 4095</div>
-</center>
+</center>'
 
 <center>
     < img 
