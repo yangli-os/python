@@ -18,12 +18,26 @@ Statement: All member information data used in the member analysis is not disclo
 
 As of May 20, 2020, the number of participants determined by the Wuhan2020 open source community through the statistics of participants' email addresses is 4,095. Subsequently, volunteer certificates were issued through the email of volunteers, and a total of 1,942 people received Wuhan2020 volunteer certificates.
 <center>
-    < img src="https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png" width = "400" height = "300">
+    < img 
+    src="https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png" 
+    width = "400" height = "300">
     <br>
     <div style="color: #999;
     font-size:11px;
     padding: 2px;">All mailbox types in the community, total 4095</div>
 </center>
+
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">All mailbox types in the community, total 4095</div>
+</center>z
+
 
 <center>
     < img 
