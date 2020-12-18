@@ -46,12 +46,9 @@ In addition, we found 16 Alibaba email,5 liulishuo email, 4 Jd email, graphite, 
 In the early stage of Wuhan2020 project, a total of 1,606 pieces of information about the occupation and education of volunteers were collected. According to the collected information of volunteers, these volunteers could be used as samples for member analysis.
 
 The occupations of community members classify 
-<center>
-![Job analysis of community members01](https://github.com/16647615268/python/blob/master/wuhan2020/prefess.png)
-</center>
-<center>
-![Job analysis of community members02](https://github.com/16647615268/python/blob/master/wuhan2020/prefess02.png)
-</center>
+
+ <div align="center">![Job analysis of community members01](https://github.com/16647615268/python/blob/master/wuhan2020/prefess.png)</div>
+ <div align="center">![Job analysis of community members02](https://github.com/16647615268/python/blob/master/wuhan2020/prefess02.png)</div>
 
 The difference between the two figures above is that different dict order is used to divide the careers of members. The dict order in Figure 1 is that of students, engineers, programmers and designers. The dict sequence in Figure 2 is programmer, engineer, student, and designer. The purpose of this design is to distinguish community members with multiple professional identities. Use a class in Figure 1 cut a class in Figure 2 is the number of members of multiple identities.
 
