@@ -28,8 +28,7 @@ As of May 20, 2020, the number of participants determined by the Wuhan2020 open 
 </center>
 
 <center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    <img 
     src="https://github.com/16647615268/python/blob/master/wuhan2020/email_all.png">
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
