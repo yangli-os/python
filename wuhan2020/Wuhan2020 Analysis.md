@@ -29,8 +29,6 @@ All mailbox types in the community, total 4095
 
 Types of mailboxes that have received volunteer certificates, total 1942
 
-</center>
-
 We can roughly estimate the occupation and age ratio of community members through mailbox types and other data. For example, the education mailbox is used by the teachers who participated in Wuhan2020, and the QQ mailbox users are mostly young people born after 1995.
 
 In addition, we found 16 Alibaba email,5 liulishuo email, 4 Jd email, graphite, PWC, etc. We would like to thank the above company members for joining in the activities of Wuhan2020 to fight against the COVID-19 as individuals or companies, and the subsequent support and help to the Wuhan2020 open source community.
@@ -42,8 +40,6 @@ The occupations of community members classify
 <img src="https://github.com/16647615268/python/blob/master/wuhan2020/prefess.png" width="50%" height="50%">
 
 Job analysis of community members01
-
-</center>
 
 <center>
 <img src="https://github.com/16647615268/python/blob/master/wuhan2020/prefess02.png" width="50%" height="50%">
