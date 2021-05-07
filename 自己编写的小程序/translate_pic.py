@@ -1,10 +1,11 @@
+# -*- coding: UTF-8 -*-
 from aip import AipOcr
 
 # 新建一个AipOcr对象
 config = {
-    'appId': '17339549',
-    'apiKey': 'ZzcnwSqEfa13aZr5uVwKGEQd',
-    'secretKey': 'Uf5F0lifp56QFvWIYK2TXsGI7yvsKuXR'
+    'appId': '24115973',
+    'apiKey': 'tjMivLSPQvmUYey443wAG0i1',
+    'secretKey': '2XmGvY8Ol1BQPYbxkpuMv7tWaMMhHvcG'
 }
 client = AipOcr(**config)
 
@@ -23,4 +24,4 @@ def img_to_str(image_path):
         return '\n'.join([w['words'] for w in result['words_result']])
 
 if __name__ == '__main__':
-    print(img_to_str('1.jpg'))
+    print(img_to_str('2.png'))
