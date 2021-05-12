@@ -27,8 +27,8 @@ class mysql_pool:
                         host='localhost',
                         port=3306,
                         user='root',
-                        passwd='Nc1952',
-                        db='heartdiag',
+                        passwd='123456',
+                        db='database',
                         use_unicode=True,
                         charset='utf8')
         return pool
