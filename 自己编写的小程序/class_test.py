@@ -6,7 +6,7 @@ db = pymysql.Connect(host = 'localhost',
                        port = 3306,
                        user = 'root',
                        passwd = '123456',
-                       db = 'heartdiag',)
+                       db = 'database',)
 # 使用cursor()方法获取操作游标
 cursor = db.cursor()
 class Equip_control():
