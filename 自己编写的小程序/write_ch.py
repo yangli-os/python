@@ -2,7 +2,7 @@ import pymysql
 db = pymysql.Connect(host = 'localhost',
                        port = 3306,
                        user = 'root',
-                       passwd = 'Nc1952',
+                       passwd = '123456',
                        db = 'heartdiag',
                        charset='utf8')
 
