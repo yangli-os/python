@@ -5,7 +5,7 @@ import pymysql
 db = pymysql.Connect(host = 'localhost',
                        port = 3306,
                        user = 'root',
-                       passwd = 'Nc1952',
+                       passwd = '123456',
                        db = 'heartdiag',)
 # 使用cursor()方法获取操作游标
 cursor = db.cursor()
