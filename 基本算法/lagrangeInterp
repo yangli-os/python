@@ -1,0 +1,43 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import time
+
+def lagrangeInterp(X, Y, xx):
+    # 迭代法求拉格朗日插值
+    result = 0.0
+    for i in range(len(Y)):
+        f_temp = Y[i]
+        for j in range(len(Y)):
+            if i != j:
+                f_temp *= (xx - X[j]) / (X[i] - X[j])
+        result += f_temp
+    return result
+
+def plot_image(X, Y, xq, yq,num):
+    # 绘图
+    plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
+    plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
+    plt.title("拉格朗日插值")  # 打印标题
+    plt.plot(X, Y, 's', label="原始数据")  # 蓝色点表示原来的值
+    plt.plot(xq, yq, 'r', label="差值曲线")  # 插值曲线
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.legend(loc=4)  # 指定lgend的位置
+    plt.show()
+
+def main():
+    # 原始数据
+    X = list(range(8))
+    Y = [-0.700455, -1.366065, -1.72814 , -1.530048, -0.784751, -0.252127,-0.668677, -1.076812]
+    # 计算的插值点
+    num = 20 # 被插点数
+    xq = np.linspace(np.min(X), np.max(X), num, endpoint=True) # 创建一个范围范围在[X]区间上的等差数列作为插值横坐标
+    yq = [] # 插值后的纵坐标
+    for xx in xq:
+        yq.append(lagrangeInterp(X, Y, xx))
+    # 绘图
+    plot_image(X, Y, xq, yq,num)
+
+if __name__ == '__main__':
+    main()
+
